@@ -35,6 +35,8 @@ describe('JWT Session', () => {
         cy.task('excelToJsonConverter', filePath).then(function (result) {
             cy.log(result.data[1].A);
             expect(productName).to.equal(result.data[1].B)
+
+            //un cambio mas
         })
 
         cy.readFile(filePath).then(function (text) {

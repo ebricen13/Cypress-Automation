@@ -20,6 +20,8 @@ describe('Calendar test' , () =>
         cy.get(".react-date-picker__inputGroup__input").each(($el , index) =>
         {
             cy.wrap($el).invoke('val').should('eq' , expectedList[index])
+
+            //otro cambio
         })
     })
     
